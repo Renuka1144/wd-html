@@ -1,0 +1,275 @@
+   • What are the new tags added in HTML5?
+
+Ans~HTML5 introduced several new tags and attributes to enhance the functionality, semantics, and structure of web documents. Some of the key new tags added in HTML5 include:
+
+1.   '<article>':  
+   - Represents a self-contained piece of content that could be distributed and reused independently, such as a news article or blog post.
+
+2.   '<section>':  
+   - Represents a generic section of a document. It is often used to group together related content.
+
+3.   '<nav>':  
+   - Represents a navigation menu or links to other pages.
+
+4.   '<header>':  
+   - Represents a header section typically containing a group of introductory or navigational elements.
+
+5.   '<footer>':  
+   - Represents a footer section typically containing metadata, copyright information, or links to related resources.
+
+6.   '<aside>':  
+   - Represents content that is tangentially related to the content around it, such as a sidebar or pull quote.
+
+7.   '<figure>' and '<figcaption>':  
+   - '<figure>' is used to encapsulate media content, such as images or videos. '<figcaption>' provides a caption for the content inside the '<figure>'.
+
+8.   '<main>':  
+   - Represents the main content of the document, excluding headers, footers, and sidebars.
+
+9.   '<mark>':  
+   - Represents text highlighted for reference or notation.
+
+10.   '<progress>':  
+    - Represents the completion progress of a task.
+
+11.   '<output>':  
+    - Represents the result of a calculation or user action.
+
+12.   '<time>':  
+    - Represents a specific period in time. It can include machine-readable date and time information.
+
+13.   '<section>':  
+    - Represents a thematic grouping of content within a document.
+
+14.   '<details>' and '<summary>':  
+    - '<details>' creates a disclosure widget from which the user can obtain additional information. '<summary>' provides a summary or label for the content hidden within '<details>'.
+
+15.   '<datalist>' and '<option>':  
+    - '<datalist>' is used with '<input>' elements to provide a predefined list of options. '<option>' defines options within the '<datalist>'.
+
+These new tags contribute to better document structure, improved semantics, and enhanced accessibility. Additionally, HTML5 introduced new attributes and features, such as the ability to embed audio and video elements ('<audio>' and '<video>'), the canvas element for drawing graphics, and the use of local storage for client-side data storage ('localStorage').
+
+Keep in mind that while HTML5 introduced these new features, it's important to check for browser compatibility, especially for older browsers.
+
+     • How to embed audio and video in a webpage?
+
+Ans~To embed audio and video in a webpage, HTML provides the '<audio>' and '<video>' elements, respectively. These elements allow you to include multimedia content directly within your HTML document. Here's how you can use them:
+
+    Embedding Audio ('<audio>'):
+
+ html
+<audio controls>
+  <source src="audio.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+ 
+
+- The 'controls' attribute adds audio controls (play, pause, volume) to the audio player.
+- The '<source>' element inside provides a source file ('src') and specifies the MIME type ('type') of the audio file.
+- The text inside the '<audio>' tag is a fallback message for browsers that do not support the '<audio>' element.
+
+    Embedding Video ('<video>'):
+
+ html
+<video controls width="400" height="300">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+ 
+
+- The 'controls' attribute adds video controls (play, pause, volume, etc.) to the video player.
+- The '<source>' element inside provides a source file ('src') and specifies the MIME type ('type') of the video file.
+- The 'width' and 'height' attributes define the dimensions of the video player.
+- The text inside the '<video>' tag is a fallback message for browsers that do not support the '<video>' element.
+
+    Embedding Multiple Sources:
+
+You can provide multiple '<source>' elements with different file formats to ensure compatibility across various browsers:
+
+ html
+<audio controls>
+  <source src="audio.mp3" type="audio/mp3">
+  <source src="audio.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+ 
+
+ html
+<video controls width="400" height="300">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Your browser does not support the video element.
+</video>
+ 
+
+    Additional Attributes:
+
+- 'autoplay': Starts playing the media automatically when the page loads.
+- 'loop': Loops the media playback.
+- 'muted': Plays the media without sound.
+- 'preload': Specifies whether the browser should preload the media file. Values can be "auto," "metadata," or "none."
+
+Example with additional attributes:
+
+ html
+<video controls autoplay loop muted preload="auto" width="400" height="300">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+ 
+
+Ensure that your audio and video files are in the correct formats and codecs for broad browser compatibility. Commonly supported formats include MP3 for audio and MP4 for video. Additionally, providing alternative text or messages inside the element ensures a good user experience in case the browser does not support the media element.
+
+      • Semantic element in HTML5?
+
+Ans~Semantic elements in HTML5 are tags that carry meaning about the structure and content of a web page. These elements provide information about the role and purpose of the content they enclose, making the HTML document more meaningful, accessible, and readable for both developers and browsers. Semantic elements are an essential part of creating well-structured and semantically rich web pages. Here are some of the key semantic elements introduced in HTML5:
+
+1.   '<header>':  
+   - Represents a header section typically containing a group of introductory or navigational elements.
+   - Usage example: Page header, logo, navigation links.
+
+2.   '<nav>':  
+   - Represents a navigation menu or links to other pages.
+   - Usage example: Main navigation menu.
+
+3.   '<main>':  
+   - Represents the main content of the document, excluding headers, footers, and sidebars.
+   - Usage example: Main content area of a webpage.
+
+4.   '<article>':  
+   - Represents a self-contained piece of content that could be distributed and reused independently.
+   - Usage example: News article, blog post, forum post.
+
+5.   '<section>':  
+   - Represents a generic section of a document.
+   - Usage example: Grouping related content within a page.
+
+6.   '<aside>':  
+   - Represents content that is tangentially related to the content around it.
+   - Usage example: Sidebar with related links or content.
+
+7.   '<figure>' and '<figcaption>':  
+   - '<figure>' is used to encapsulate media content, such as images or videos.
+   - '<figcaption>' provides a caption for the content inside the '<figure>'.
+   - Usage example: Image with a caption.
+
+8.   '<footer>':  
+   - Represents a footer section typically containing metadata, copyright information, or links to related resources.
+   - Usage example: Page footer with copyright information.
+
+9.   '<time>':  
+   - Represents a specific period in time. It can include machine-readable date and time information.
+   - Usage example: Displaying the publication date of an article.
+
+10.   '<mark>':  
+    - Represents text highlighted for reference or notation.
+    - Usage example: Highlighting search results.
+
+11.   '<progress>':  
+    - Represents the completion progress of a task.
+    - Usage example: Displaying the progress of a file upload.
+
+12.   '<details>' and '<summary>':  
+    - '<details>' creates a disclosure widget from which the user can obtain additional information.
+    - '<summary>' provides a summary or label for the content hidden within '<details>'.
+    - Usage example: Creating an expandable section with additional details.
+
+These semantic elements contribute to improved document structure, better search engine optimization, and enhanced accessibility for users and assistive technologies. When building web pages, it's beneficial to use these semantic elements to provide a clearer and more meaningful representation of the content's structure and purpose.
+
+      • Canvas and SVG tags
+
+Ans~Both the '<canvas>' and '<svg>' tags in HTML5 are used for drawing graphics, but they use different approaches and have different use cases.
+
+    '<canvas>' Tag:
+
+The '<canvas>' tag is a bitmap-based drawing surface that allows for dynamic rendering of graphics using JavaScript. It provides a pixel-based drawing API, where you can draw shapes, images, and other elements directly onto the canvas.
+
+     Example:
+
+ html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Example</title>
+  <style>
+    /  Add some basic styles if needed  /
+    canvas {
+      border: 1px solid  000;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="myCanvas" width="400" height="200"></canvas>
+
+  <script>
+    // JavaScript code to draw on the canvas
+    const canvas = document.getElementById('myCanvas');
+    const context = canvas.getContext('2d');
+
+    // Drawing a rectangle
+    context.fillStyle = 'blue';
+    context.fillRect(50, 50, 100, 50);
+
+    // Drawing a circle
+    context.beginPath();
+    context.arc(300, 100, 30, 0, 2   Math.PI);
+    context.fillStyle = 'red';
+    context.fill();
+    context.stroke();
+  </script>
+
+</body>
+</html>
+ 
+
+    '<svg>' Tag:
+
+The '<svg>' tag is a vector-based drawing surface that uses XML-based syntax. SVG stands for Scalable Vector Graphics and is resolution-independent, meaning that graphics can be scaled without loss of quality. SVG is often used for creating scalable graphics, charts, and diagrams.
+
+     Example:
+
+ html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Example</title>
+</head>
+<body>
+
+  <svg width="400" height="200">
+    <!-- Drawing a rectangle -->
+    <rect x="50" y="50" width="100" height="50" fill="blue"/>
+
+    <!-- Drawing a circle -->
+    <circle cx="300" cy="100" r="30" fill="red" stroke="black" stroke-width="2"/>
+  </svg>
+
+</body>
+</html>
+ 
+
+    Differences:
+
+1.   Drawing Approach:  
+   - '<canvas>': Pixel-based drawing using a bitmap. It is suitable for dynamic graphics and animations.
+   - '<svg>': Vector-based drawing using XML. It is suitable for scalable graphics and static images.
+
+2.   Rendering:  
+   - '<canvas>': Renders graphics as a bitmap, and the content is not accessible as individual elements.
+   - '<svg>': Renders graphics as scalable vector elements, and each element is accessible and manipulable.
+
+3.   Interactivity:  
+   - '<canvas>': Requires additional JavaScript for interactivity. Pixels are drawn, and there's no inherent structure.
+   - '<svg>': Elements are accessible in the DOM, making it easier to add interactivity using JavaScript or CSS.
+
+4.   Performance:  
+   - '<canvas>': Generally better performance for dynamic graphics and animations.
+   - '<svg>': Better suited for static graphics, charts, and diagrams.
+
+Choose between '<canvas>' and '<svg>' based on your specific requirements. If you need dynamic and pixel-based graphics, use '<canvas>'. If you need scalable vector graphics or static illustrations, use '<svg>'. Often, they are used together in web applications to leverage their respective strengths.
+     
